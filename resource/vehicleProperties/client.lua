@@ -303,7 +303,8 @@ function lib.setVehicleProperties(vehicle, props, fixVehicle)
     end
 
     if props.plate then
-        SetVehicleNumberPlateText(vehicle, props.plate)
+        --SetVehicleNumberPlateText(vehicle, props.plate)
+        exports["AdvancedParking"]:UpdatePlate(vehicle, props.plate)
     end
 
     if props.plateIndex then
